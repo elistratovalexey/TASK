@@ -1,0 +1,48 @@
+name: project_reminders
+description: Personal project task manager
+publish_to: none
+version: 1.3.3+14
+environment:
+  sdk: '>=3.9.0 <4.0.0'
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  shared_preferences: ^2.3.2
+  path_provider: ^2.1.5
+  path: ^1.9.1
+  uuid: ^4.5.1
+  crypto: ^3.0.6
+  http: ^1.4.0
+  xml: ^6.5.0
+  file_selector: ^1.0.3
+  file_picker: 10.3.10
+  flutter_secure_storage: 9.2.4
+  google_sign_in: 6.3.0
+  url_launcher: ^6.3.1
+  flutter_local_notifications: 19.4.1
+  timezone: ^0.10.1
+  record: '>=6.0.0 <8.0.0'
+  image_picker: ^1.1.2
+  open_filex: '>=4.7.0 <6.0.0'
+  enough_mail: ^2.1.7
+  archive: ^4.0.0
+flutter:
+  uses-material-design: true
+dev_dependencies:
+  msix: ^3.16.9
+  flutter_lints: ^6.0.0
+  flutter_test:
+    sdk: flutter
+msix_config:
+  display_name: Мои проекты
+  publisher_display_name: Project Reminders
+  identity_name: ProjectReminders.Personal
+  msix_version: 1.3.3.0
+  publisher: CN=ProjectReminders
+  capabilities: internetClient, microphone, webcam
+  toast_activator:
+    clsid: 76ba624c-ae22-42bd-a926-b89c0b26323e
+    arguments: ----AppNotificationActivationServer
+    display_name: Мои проекты
